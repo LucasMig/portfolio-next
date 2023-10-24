@@ -1,0 +1,36 @@
+{
+    "head": {
+        "title": "Forkify App"
+    },
+    "name": "Mappin App",
+    "techStack": [
+        {
+            "name": "React",
+            "icon": "SiReact"
+        },
+        {
+            "name": "JavaScript",
+            "icon": "SiJavascript"
+        },
+        {
+            "name": "CSS",
+            "icon": "SiCss3"
+        }
+    ],
+    "imagePath": "/projects/forkify.webp",
+    "title": "pin your workouts on the map",
+    "description": "my very first project using a external library, which was leaflet.js. Also, this was my first OOP project, using some new JavaScript resources like Classes and Classfields. Simply click anywhere in the map to map a new workout!",
+    "links": [
+        {
+            "name": "repository",
+            "url": "https://github.com/LucasMig/mappin-app",
+            "icon": "BsCodeSlash"
+        },
+        {
+            "name": "demo",
+            "url": "https://mappin-app.vercel.app/",
+            "icon": "BsEye"
+        }
+    ],
+    "htmlPageContent": "<h1>My Journey with Leaflet.js: Unveiling My First OOP Project</h1><h2>Introduction:</h2><p>In my relentless pursuit of growth as a developer, I recently embarked on a remarkable journey with my very first project that pushed my boundaries in multiple ways. Not only did I delve into the world of external libraries, particularly Leaflet.js, but I also dived into the intriguing realm of Object-Oriented Programming (OOP) in JavaScript. This blog post is a reflection on the challenges faced, the valuable lessons learned, and the takeaways from this transformative experience.</p><h2>The Challenging Aspects:</h2><ol><li><strong>External Libraries - Embracing Leaflet.js:</strong><br><p>Incorporating an external library into my project was a bold step forward. Leaflet.js, renowned for its versatility in creating interactive maps, posed both excitement and apprehension. It offered a wealth of features but also required careful navigation through its documentation. The challenge lay in understanding its architecture, syntax, and integration with my project. But it turned out to be a fascinating learning curve.</p></li><li><strong>Object-Oriented Programming (OOP):</strong><br><p>Transitioning to OOP was a defining moment. Shifting from procedural to object-oriented thinking was an intellectual leap. Understanding and implementing Classes, Classfields, and Object Instances added layers of complexity. The challenge lay in structuring my code to make it more organized and maintainable. Each day brought new insights and a deeper understanding of OOP principles.</p></li></ol><h2>The Takeaways:</h2><ol><li><strong>Structural Clarity:</strong><br><p>Through the adoption of OOP, my project gained a new level of structural clarity. Classes allowed for better organization and modularity, enhancing code readability and maintainability. This is a practice I intend to carry forward into future projects.</p></li><li><strong>Problem-Solving Skills:</strong><br><p>Facing challenges with Leaflet.js and OOP enhanced my problem-solving skills. It required a blend of creative thinking, research, and patience. These skills are invaluable in the world of development and will serve as a foundation for tackling future obstacles.</p></li><li><strong>Interactive User Experience:</strong><br><p>The project's end result was an interactive map that users could engage with by simply clicking anywhere. This was immensely satisfying. It highlighted the power of external libraries in creating dynamic and engaging user experiences, which I intend to explore further in upcoming projects.</p></li><li><strong>Continuous Learning:</strong><br><p>This project reinforced the importance of embracing new technologies and methodologies. The world of web development is in a constant state of evolution, and my journey is an ongoing process of learning, unlearning, and adapting.</p></li></ol><h2>Conclusion:</h2><p>My first project with Leaflet.js, along with my dive into OOP, was a challenging but immensely rewarding experience. It was a pivotal moment in my developer journey, reminding me that the best learning often happens at the edge of one's comfort zone. With newfound insights and skills, I'm eager to explore new horizons and tackle future projects with even more confidence. This journey is a testament to the incredible growth that can be achieved through dedication and a relentless pursuit of knowledge.</p>"
+}
