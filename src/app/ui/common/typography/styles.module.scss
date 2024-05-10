@@ -1,0 +1,15 @@
+.typography {
+
+  span {
+    color: var(--gray-500);
+  }
+
+  &.title {
+    font-size: 5rem;
+    font-weight: 500;
+  }
+
+  &.subTitle {}
+
+  &.text {}
+}
