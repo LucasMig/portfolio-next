@@ -1,0 +1,45 @@
+.nav {
+    display: flex; /* Center items horizontally */
+  }
+
+  .menuList {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #fff;
+    list-style: none;
+    padding: 10rem 2rem 2rem;
+    margin: 0;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+
+    &.open {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transform: translateX(0);
+    }
+  }
+
+  .menuList .menuItem {
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    border-radius: 1.6rem;
+
+    &.active {
+      font-weight: 700;
+      background-color: var(--main-color);
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  .menuList a {
+    text-decoration: none;
+    color: #000; /* Change color based on your theme */
+  }

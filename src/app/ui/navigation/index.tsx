@@ -1,0 +1,53 @@
+"use client";
+
+import { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Button } from "@/app/ui/common";
+import Link from "next/link";
+import { navLinks } from "@/app/lib/constants";
+import styles from "@/app/ui/navigation/styles.module.scss";
+import { usePathname } from "next/navigation";
+import { NavLinkProps, SideMenuProps } from "@/app/ui/navigation/definitions";
+
+function NavLink({ href, label, isActive, handleClick }: NavLinkProps) {
+  return (
+    <li
+      className={`${styles.menuItem} ${isActive ? styles.active : ""}`}
+      onClick={handleClick}
+    >
+      <Link href={href}>{label}</Link>
+    </li>
+  );
+}
+
+function SideMenu({ isOpen, toggleMenu, pathname }: SideMenuProps) {
+  return (
+    <ul className={`${styles.menuList} ${isOpen ? styles.open : ""}`}>
+      {navLinks.map(({ href, label }: { href: string; label: string }) => (
+        <NavLink
+          key={label}
+          href={href}
+          label={label}
+          isActive={pathname === href}
+          handleClick={toggleMenu}
+        />
+      ))}
+    </ul>
+  );
+}
+
+export default function Navigation() {
+  const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  return (
+    <nav className={styles.nav}>
+      <Button handleClick={toggleMenu} customStyles={{ zIndex: 2 }}>
+        {isOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
+      </Button>
+      <SideMenu isOpen={isOpen} toggleMenu={toggleMenu} pathname={pathname} />
+    </nav>
+  );
+}
