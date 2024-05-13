@@ -6,8 +6,14 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --base-font-size: 62.5%;
-  --main-color: #795EF2;
 
+  --main-tint-100: #D1BCF9;
+  --main-tint-200: #9F7AEA;
+  --main-color: #795EF2;
+  --main-shade-100: #553C9A;
+  --main-shade-200: #3D2C7A;
+
+  --default-bg-color: #fff;
 
   --gray-100: #f7fafc;
   --gray-200: #edf2f7;
@@ -58,6 +64,17 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+
+    --default-bg-color: #1C1B21;
+
+    --gray-100: #2d3748;
+    --gray-200: #4a5568;
+    --gray-300: #718096;
+    --gray-400: #a0aec0;
+    --gray-500: #cbd5e0;
+    --gray-600: #e2e8f0;
+    --gray-700: #edf2f7;
+    --gray-800: #f7fafc;
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
     --secondary-glow: linear-gradient(

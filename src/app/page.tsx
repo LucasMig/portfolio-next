@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "@/app/page.module.scss";
 import Hero from "@/app/ui/hero";
 
