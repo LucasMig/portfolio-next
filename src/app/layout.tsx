@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/app/globals.scss";
 import { interTight } from "@/app/ui/fonts";
 import Header from "@/app/ui/header";
+import Footer from "@/app/ui/footer";
 
 export const metadata: Metadata = {
   title: "Lucas Migliori - Full Stack Developer",
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={interTight.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -10,6 +10,14 @@
 
     > span {
         font-size: 2rem;
-        font-weight: 600;
+        font-weight: 600;;
+
+        &.defColor {
+            color: var(--main-text-color) !important;
+        }
+
+        &.invColor {
+            color: var(--main-text-color-inv) !important;
+        }
     }
 }

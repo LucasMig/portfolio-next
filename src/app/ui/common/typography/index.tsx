@@ -6,12 +6,16 @@ export default function Typography({
   children,
   customStyles = {},
   variant = "text",
+  size = "normal",
+  invertTextColor = false,
 }: TypographyProps) {
   const Element = TypographyElementMap[variant] as keyof JSX.IntrinsicElements;
 
   return (
     <Element
-      className={`${styles.typography} ${styles[variant]}`}
+      className={`${styles.typography} ${styles[variant]} ${styles[size]} ${
+        styles[invertTextColor ? "invColor" : "defColor"]
+      }`}
       style={customStyles}
     >
       {children}

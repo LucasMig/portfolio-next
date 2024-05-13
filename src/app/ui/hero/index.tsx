@@ -25,14 +25,16 @@ export default function Hero() {
       </Typography>
 
       <div className={styles.btnContainer}>
-        <Button variant="outline">
-          <Link href="/contact">
+        <Link href="/contact">
+          <Button variant="outline">
             Let's talk <AiOutlineArrowRight />
-          </Link>
-        </Button>
-        <Button>
-          <Link href="/projects">See my projects</Link>
-        </Button>
+          </Button>
+        </Link>
+        <Link href="/projects">
+          <Button>
+            My projects <AiOutlineArrowRight />
+          </Button>
+        </Link>
       </div>
     </section>
   );
