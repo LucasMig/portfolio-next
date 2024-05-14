@@ -4,7 +4,7 @@ import Link from "next/link";
 import { LogoProps } from "@/app/ui/logo/definitions";
 import { Typography } from "@/app/ui/common";
 
-export default function Logo({ invertTextColor }: LogoProps) {
+export default function Logo({ customTextColor }: LogoProps) {
   return (
     <Link className={styles.logo} href="/">
       <Image
@@ -13,7 +13,7 @@ export default function Logo({ invertTextColor }: LogoProps) {
         width={100}
         height={100}
       />
-      <Typography variant="span" invertTextColor={invertTextColor}>
+      <Typography variant="span" customStyles={{ color: customTextColor }}>
         Lucas Migliori
       </Typography>
     </Link>
