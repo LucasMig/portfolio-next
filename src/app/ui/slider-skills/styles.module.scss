@@ -1,0 +1,12 @@
+.sliderContainer {
+  width: 100%;
+  overflow: hidden;
+
+  .swiper {
+    padding-bottom: 3.2rem;
+
+    span {
+      background: var(--main-color)
+    }
+  }
+}

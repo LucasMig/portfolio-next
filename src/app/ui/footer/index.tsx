@@ -7,7 +7,7 @@ import SocialLinks from "@/app/ui/footer/social-links";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <Logo invertTextColor={true} />
+      <Logo customTextColor="#fff" />
       <hr />
       <FooterInfo />
       <SocialLinks />

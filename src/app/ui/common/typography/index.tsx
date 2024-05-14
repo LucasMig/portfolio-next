@@ -1,6 +1,13 @@
-import { TypographyElementMap } from "@/app/lib/constants";
 import { TypographyProps } from "@/app/ui/common/typography/definitions";
 import styles from "@/app/ui/common/typography/styles.module.scss";
+
+const TypographyElementMap = {
+  title: "h1",
+  subTitle: "h2",
+  cardTitle: "h3",
+  text: "p",
+  span: "span",
+};
 
 export default function Typography({
   children,
