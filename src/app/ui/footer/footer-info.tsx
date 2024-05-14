@@ -12,7 +12,7 @@ export default function FooterInfo() {
         invertTextColor={true}
         customStyles={{ textAlign: "center", color: "#cbd5e0" }}
       >
-        I'm a Fullstack Developer with {expYears}+ years of experience,
+        I'm a Full Stack Developer with {expYears}+ years of experience,
         specializing in front-end and passionate about crafting exceptional user
         experiences.
       </Typography>
