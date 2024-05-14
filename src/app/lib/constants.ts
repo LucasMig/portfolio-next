@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
@@ -29,14 +27,6 @@ export const socialMediaInfo = [
     url: "https://www.youtube.com/@lucasmigliori",
   },
 ];
-
-/*
-💻 Frontend Mastery: Expertise in TypeScript, React, Next.js, SASS, and the core web technologies (HTML, CSS, JS), utilizing structured project patterns like Atomic Design and GitFlow for robust development.
-
-🛠️ Stack Proficiency: Familiarity with Node.js, Express.js, NestJS, SQL, Docker, and AWS enhancing my ability to contribute across the project stack.
-
-🔎 QA Excellence: Skills in meticulous test planning, API testing, Postman scripting, and front-end test automation with Cypress, ensuring top-notch software quality.
-*/
 
 export const mySkills = [
   {
