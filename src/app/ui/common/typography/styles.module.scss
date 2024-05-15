@@ -20,6 +20,19 @@
     margin: 10px 0;
   }
 
+  &.jobTitle{
+    font-size: 2rem;
+    font-weight: 500;
+
+    &.defColor {
+      color: var(--main-color) !important;
+    }
+
+    &.invColor {
+      color: var(--main-text-color);
+    }
+  }
+
   &.text {
     font-weight: 300;
     line-height: 1.6;
@@ -50,6 +63,7 @@
   &.defColor {
     color: var(--main-text-color);
   }
+
   &.invColor {
     color: var(--main-text-color-inv);
   }

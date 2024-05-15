@@ -1,5 +1,6 @@
 import styles from "@/app/ui/experiences-section/styles.module.scss";
 import SectionHeading from "@/app/ui/section-heading";
+import ExperiencesAccordions from "@/app/ui/experiences";
 
 export default function ExperiencesSection() {
   const heading = {
@@ -11,6 +12,7 @@ export default function ExperiencesSection() {
   return (
     <section className={styles.section}>
       <SectionHeading title={heading.title} description={heading.description} />
+      <ExperiencesAccordions />
     </section>
   );
 }

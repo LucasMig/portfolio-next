@@ -5,6 +5,7 @@ const TypographyElementMap = {
   title: "h1",
   subTitle: "h2",
   cardTitle: "h3",
+  jobTitle: "h3",
   text: "p",
   span: "span",
 };

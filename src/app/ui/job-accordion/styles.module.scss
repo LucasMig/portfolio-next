@@ -1,0 +1,33 @@
+.container {
+
+
+  .headingContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1.2rem;
+    border-bottom: solid 1px var(--gray-300);
+
+    .header {
+      .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .subHeading {
+        width: max-content;
+        > p {
+          color: var(--gray-500);
+        }
+      }
+    }
+
+    .tags {
+      align-self: baseline;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  }
+}
