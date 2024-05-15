@@ -5,7 +5,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { FaAws, FaGit, FaLayerGroup, FaReact, FaVial } from "react-icons/fa";
-import { mySkills } from "@/app/lib/constants";
+import { mySkills } from "@/app/_data/skills";
 import Card from "@/app/ui/card";
 import styles from "@/app/ui/slider-skills/styles.module.scss";
 

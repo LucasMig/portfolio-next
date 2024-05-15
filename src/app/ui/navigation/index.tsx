@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { Button } from "@/app/ui/common";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Button } from "@/app/ui/common";
 import { navLinks } from "@/app/lib/constants";
 import styles from "@/app/ui/navigation/styles.module.scss";
-import { usePathname } from "next/navigation";
 import { NavLinkProps, SideMenuProps } from "@/app/ui/navigation/definitions";
 
 function NavLink({ href, label, isActive, handleClick }: NavLinkProps) {
