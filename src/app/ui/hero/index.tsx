@@ -1,9 +1,9 @@
 import Image from "next/image";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import Link from "next/link";
 import styles from "@/app/ui/hero/styles.module.scss";
 import Typography from "@/app/ui/common/typography";
 import { Button } from "@/app/ui/common";
-import { AiOutlineArrowRight } from "react-icons/ai";
-import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -11,8 +11,8 @@ export default function Hero() {
       <Image
         src="/Profile-new.webp"
         alt="lucas profile picture"
-        width={150}
-        height={150}
+        width={128}
+        height={128}
       />
 
       <Typography

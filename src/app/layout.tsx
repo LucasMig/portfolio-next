@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
 import "@/app/globals.scss";
-import { interTight } from "@/app/ui/fonts";
 import Header from "@/app/ui/header";
 import Footer from "@/app/ui/footer";
+import { interTight } from "@/app/ui/fonts";
+import { MainContextProvider } from "@/app/main-context-provider";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Lucas Migliori - Full Stack Developer",
@@ -18,9 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={interTight.className}>
-        <Header />
-        {children}
-        <Footer />
+        <MainContextProvider>
+          <Header />
+          {children}
+          <Footer />
+        </MainContextProvider>
       </body>
     </html>
   );

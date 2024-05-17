@@ -1,13 +1,14 @@
+import parse from "html-react-parser";
 import { Typography } from "@/app/ui/common";
 import { SectionHeadingProps } from "@/app/ui/section-heading/definitions";
-import parse from "html-react-parser";
+import styles from "@/app/ui/section-heading/styles.module.scss";
 
 export default function SectionHeading({
   title,
   description,
 }: SectionHeadingProps) {
   return (
-    <>
+    <div className={styles.heading}>
       <Typography
         variant="subTitle"
         customStyles={{
@@ -24,6 +25,6 @@ export default function SectionHeading({
       >
         {parse(description)}
       </Typography>
-    </>
+    </div>
   );
 }

@@ -20,7 +20,9 @@
     }
 
     .policiesContainer {
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 1.6rem;
+        align-items: center;
 
         > a {
             display: flex;

@@ -1,10 +1,11 @@
 "use client";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperProps, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { FaAws, FaGit, FaLayerGroup, FaReact, FaVial } from "react-icons/fa";
+import { FaPuzzlePiece } from "react-icons/fa6";
 import { mySkills } from "@/app/_data/skills";
 import Card from "@/app/ui/card";
 import styles from "@/app/ui/slider-skills/styles.module.scss";
@@ -15,10 +16,12 @@ const skillIconMap = {
   aws: <FaAws />,
   git: <FaGit />,
   test: <FaVial />,
+  puzzle: <FaPuzzlePiece />,
 };
 
 export default function SliderSkills() {
-  const swiperProps = {
+  const swiperProps: SwiperProps = {
+    spaceBetween: 20,
     loop: true,
     autoplay: {
       delay: 3000,
