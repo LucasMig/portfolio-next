@@ -4,7 +4,7 @@ import SectionHeading from "@/app/ui/section-heading";
 
 export default function OfferingsSection() {
   const heading = {
-    title: "What do <span>I bring</span> to the table?",
+    title: "Tailored to your needs: <span>My skills</span> at a glance",
     description:
       "I specialize in front-end and dedicate to crafting exceptional user experiences through innovative design and cutting-edge technologies",
   };

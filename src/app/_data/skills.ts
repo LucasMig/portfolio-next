@@ -29,4 +29,10 @@ export const mySkills = [
     description:
       "Skilled in test planning, API testing, Postman scripting, and test automation with Cypress.",
   },
+  {
+    icon: "puzzle",
+    title: "Problem Solving",
+    description:
+      "Strong analytical and critical thinking skills to identify, analyze, and solve problems.",
+  },
 ];

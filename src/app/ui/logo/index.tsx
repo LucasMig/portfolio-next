@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "@/app/ui/logo/styles.module.scss";
 import Link from "next/link";
+import styles from "@/app/ui/logo/styles.module.scss";
 import { LogoProps } from "@/app/ui/logo/definitions";
 import { Typography } from "@/app/ui/common";
 
