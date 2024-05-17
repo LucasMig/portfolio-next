@@ -1,9 +1,11 @@
+@import '@/app/ui/variables';
+
 .header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    background-color: var(--default-bg-color);
-    border-bottom: solid 1px var(--gray-200);
+    background-color: $default-bg-color;
+    border-bottom: solid 1px $gray-200;
 }

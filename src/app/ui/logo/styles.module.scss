@@ -1,3 +1,5 @@
+@import '@/app/ui/variables';
+
 .logo {
     display: flex;
     align-items: center;
@@ -13,11 +15,11 @@
         font-weight: 600;;
 
         &.defColor {
-            color: var(--main-text-color) !important;
+            color: $main-text-color !important;
         }
 
         &.invColor {
-            color: var(--main-text-color-inv) !important;
+            color: $main-text-color-inv !important;
         }
     }
 }

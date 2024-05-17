@@ -1,7 +1,9 @@
+@import '@/app/ui/variables';
+
 .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--default-bg-color);
+  background-color: $-default-bg-color;
 }

@@ -1,8 +1,10 @@
+@import '@/app/ui/variables';
+
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 2px var(--main-color);
+    border: solid 2px $main-color;
     border-radius: 12rem;
     background: none;
     padding: 0.5rem 2.4rem;
@@ -16,11 +18,11 @@
     }
 
     &.outline {
-        color: var(--main-color);
+        color: $main-color;
     }
 
     &.fill {
-        background-color: var(--main-color);
+        background-color: $main-color;
         color: #fff;
     }
   }

@@ -1,7 +1,8 @@
-.typography {
+@import '@/app/ui/variables';
 
+.typography {
   span {
-    color: var(--gray-400);
+    color: $gray-400;
   }
 
   &.title {
@@ -25,11 +26,11 @@
     font-weight: 500;
 
     &.defColor {
-      color: var(--main-color) !important;
+      color: $main-color !important;
     }
 
     &.invColor {
-      color: var(--main-text-color);
+      color: $main-text-color;
     }
   }
 
@@ -61,10 +62,10 @@
   }
 
   &.defColor {
-    color: var(--main-text-color);
+    color: $main-text-color;
   }
 
   &.invColor {
-    color: var(--main-text-color-inv);
+    color: $main-text-color-inv;
   }
 }
