@@ -1,14 +1,14 @@
 "use client";
 
-import { Swiper, SwiperProps, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import { FaAws, FaGit, FaLayerGroup, FaReact, FaVial } from "react-icons/fa";
-import { FaPuzzlePiece } from "react-icons/fa6";
 import { mySkills } from "@/app/_data/skills";
 import Card from "@/app/ui/card";
 import styles from "@/app/ui/slider-skills/styles.module.scss";
+import { FaAws, FaGit, FaLayerGroup, FaReact, FaVial } from "react-icons/fa";
+import { FaPuzzlePiece } from "react-icons/fa6";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper/modules";
+import { Swiper, type SwiperProps, SwiperSlide } from "swiper/react";
 
 const skillIconMap = {
   frontend: <FaReact />,

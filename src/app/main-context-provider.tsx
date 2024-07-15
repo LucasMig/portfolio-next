@@ -2,11 +2,16 @@
 
 import { createContext, useContext, useState } from "react";
 
-const MainContext = createContext({});
+const MainContext = createContext({
+  isSideBarOpen: false,
+  toggleSideBar: () => {},
+});
 
 export const MainContextProvider = ({
   children,
-}: React.PropsWithChildren<{}>) => {
+}: React.PropsWithChildren<{
+  children: React.ReactNode;
+}>) => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
 
   const toggleSideBar = () => setIsSideBarOpen(!isSideBarOpen);

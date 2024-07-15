@@ -1,4 +1,4 @@
-import { ButtonProps } from "@/app/ui/common/button/definitions";
+import { type ButtonProps } from "@/app/ui/common/button/definitions";
 import styles from "@/app/ui/common/button/styles.module.scss";
 
 export default function Button({

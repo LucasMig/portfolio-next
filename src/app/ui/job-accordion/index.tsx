@@ -1,13 +1,21 @@
-import { JobAccordionProps } from "@/app/ui/job-accordion/definitions";
-import styles from "@/app/ui/job-accordion/styles.module.scss";
-import { Typography, Tag } from "@/app/ui/common";
 import { formatDate } from "@/app/lib/utils";
+import { Tag, Typography } from "@/app/ui/common";
+import { type JobAccordionProps } from "@/app/ui/job-accordion/definitions";
+import styles from "@/app/ui/job-accordion/styles.module.scss";
 
 export default function JobAccordion({
   job,
   isOpen = false,
 }: JobAccordionProps) {
-  const { company, title, location, startDate, endDate, tags, showcase } = job;
+  const {
+    company,
+    title: _title,
+    location,
+    startDate,
+    endDate,
+    tags,
+    showcase,
+  } = job;
 
   return (
     <div className={styles.container}>

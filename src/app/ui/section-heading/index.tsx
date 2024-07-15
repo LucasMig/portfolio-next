@@ -1,6 +1,6 @@
 import parse from "html-react-parser";
 import { Typography } from "@/app/ui/common";
-import { SectionHeadingProps } from "@/app/ui/section-heading/definitions";
+import { type SectionHeadingProps } from "@/app/ui/section-heading/definitions";
 import styles from "@/app/ui/section-heading/styles.module.scss";
 
 export default function SectionHeading({
