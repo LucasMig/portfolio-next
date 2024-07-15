@@ -1,17 +1,28 @@
 {
+  //Editor
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.fixAll.stylelint": "always",
+    "source.organizeImports": "explicit"
+  },
+
+  //Linting
+  "eslint.format.enable": true,
+
+  //Typescript
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Overrides
+  "stylelint.validate": ["css", "scss"],
+
+  "[scss]": {
     "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "always",
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSaveMode": "file",
-    "editor.rulers": [
-        80,
-        120
-    ],
-    "editor.tabSize": 2,
-    "editor.wordWrap": "on",
-    "files.eol": "\n",
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

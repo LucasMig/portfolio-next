@@ -1,0 +1,33 @@
+@import '@/app/ui/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  justify-content: center;
+  padding: 2.4rem;
+  margin: auto;
+
+  .icon {
+    margin-right: 0 auto;
+    border-radius: 50%;
+    background-color: $gray-200;
+    padding: 2rem;
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.4rem;
+      border: solid 0.15rem $main-color;
+      border-radius: 8px;
+
+      > svg {
+        color: $main-color;
+        width: 4.4rem;
+        height: 4.4rem;
+      }
+    }
+  }
+}

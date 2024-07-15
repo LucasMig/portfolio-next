@@ -1,3 +1,10 @@
+import Maintenance from "@/app/ui/maintenance";
+import styles from "@/app/projects/styles.module.scss";
+
 export default function Page() {
-    return <div>All projects page</div>
+  return (
+    <main className={styles.main}>
+      <Maintenance />
+    </main>
+  );
 }

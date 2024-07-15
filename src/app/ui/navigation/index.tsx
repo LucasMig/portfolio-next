@@ -2,12 +2,13 @@
 
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { Button } from "@/app/ui/common";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Button } from "@/app/ui/common";
 import { navLinks } from "@/app/lib/constants";
 import styles from "@/app/ui/navigation/styles.module.scss";
-import { usePathname } from "next/navigation";
 import { NavLinkProps, SideMenuProps } from "@/app/ui/navigation/definitions";
+import { useMainContext } from "@/app/main-context-provider";
 
 function NavLink({ href, label, isActive, handleClick }: NavLinkProps) {
   return (
@@ -38,16 +39,18 @@ function SideMenu({ isOpen, toggleMenu, pathname }: SideMenuProps) {
 
 export default function Navigation() {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const { isSideBarOpen, toggleSideBar } = useMainContext();
 
   return (
     <nav className={styles.nav}>
-      <Button handleClick={toggleMenu} customStyles={{ zIndex: 2 }}>
-        {isOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
+      <Button handleClick={toggleSideBar} customStyles={{ zIndex: 2 }}>
+        {isSideBarOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
       </Button>
-      <SideMenu isOpen={isOpen} toggleMenu={toggleMenu} pathname={pathname} />
+      <SideMenu
+        isOpen={isSideBarOpen}
+        toggleMenu={toggleSideBar}
+        pathname={pathname}
+      />
     </nav>
   );
 }

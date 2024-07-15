@@ -1,0 +1,14 @@
+@import '@/app/ui/variables';
+
+.sliderContainer {
+  width: 100%;
+  overflow: hidden;
+
+  .swiper {
+    padding: 3.2rem 3.2rem 4rem;
+
+    span {
+      background: $main-color;
+    }
+  }
+}

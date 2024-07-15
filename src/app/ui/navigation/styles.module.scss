@@ -1,3 +1,5 @@
+@import '@/app/ui/variables';
+
 .nav {
     display: flex; /* Center items horizontally */
   }
@@ -7,19 +9,24 @@
     top: 0;
     right: 0;
     height: 100vh;
-    width: 250px;
-    background-color: #fff;
+    width: 20rem;
+    background-color: $gray-100;
     list-style: none;
     padding: 10rem 2rem 2rem;
     margin: 0;
-    transform: translateX(100%);
+    transform: translateX(110%);
     transition: transform 0.3s ease-in-out;
     z-index: 1;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
 
     &.open {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       transform: translateX(0);
     }
+  }
+
+  .menuList a {
+    text-decoration: none;
+    color: #000; /* Change color based on your theme */
   }
 
   .menuList .menuItem {
@@ -31,15 +38,10 @@
 
     &.active {
       font-weight: 700;
-      background-color: var(--main-color);
+      background-color: $main-color;
 
       a {
         color: #fff;
       }
     }
-  }
-
-  .menuList a {
-    text-decoration: none;
-    color: #000; /* Change color based on your theme */
   }
