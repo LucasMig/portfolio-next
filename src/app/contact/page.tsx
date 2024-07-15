@@ -3,7 +3,7 @@ import styles from "@/app/contact/styles.module.scss";
 
 export default function Page() {
   return (
-    <main className={styles.name}>
+    <main className={styles.main}>
       <Maintenance />
     </main>
   );

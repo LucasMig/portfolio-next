@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss"
+  ],
+  "plugins": ["stylelint-order", "stylelint-scss", "stylelint-prettier"],
+  "rules": {
+    "order/order": [
+      "custom-properties",
+      "dollar-variables",
+      "at-rules",
+      "declarations",
+      "rules"
+    ],
+    "scss/load-no-partial-leading-underscore": null,
+    "color-hex-length": "short",
+    "order/properties-alphabetical-order": true,
+    "scss/no-global-function-names": null,
+    "selector-class-pattern": null,
+    "prettier/prettier": true
+  }
+}

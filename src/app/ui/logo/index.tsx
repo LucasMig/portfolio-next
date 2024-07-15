@@ -12,6 +12,7 @@ export default function Logo({ customTextColor }: LogoProps) {
         alt="Logo art"
         width={100}
         height={100}
+        priority
       />
       <Typography variant="span" customStyles={{ color: customTextColor }}>
         Lucas Migliori
