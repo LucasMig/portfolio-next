@@ -21,15 +21,15 @@ export default function JobAccordion({
           </div>
           <div className={styles.subHeading}>
             <Typography variant="text">{`• ${formatDate(startDate)} - ${
-              endDate ? endDate : "Present"
+              endDate ? formatDate(endDate) : "Present"
             }`}</Typography>
           </div>
         </div>
-        {/* <div className={styles.tags}>
+        <div className={styles.tags}>
           {tags.map((tag, index) => (
             <Tag key={index}>{tag}</Tag>
           ))}
-        </div> */}
+        </div>
       </div>
 
       {isOpen && (
