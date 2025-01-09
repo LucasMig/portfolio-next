@@ -6,6 +6,7 @@
   .headingContainer {
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     gap: 1rem;
     padding-bottom: 1.2rem;
@@ -29,10 +30,28 @@
     }
 
     .tags {
-      align-self: baseline;
       display: flex;
+      justify-content: flex-end;
       flex-wrap: wrap;
+      max-width: 60%;
       gap: 0.5rem;
+    }
+
+    > svg {
+      cursor: pointer;
+      color: $main-color;
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  .body {
+    &.open {
+      display: block;
+    }
+
+    &.closed {
+      display: none;
     }
   }
 }

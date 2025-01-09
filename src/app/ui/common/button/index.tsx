@@ -1,5 +1,6 @@
-import { type ButtonProps } from "@/app/ui/common/button/definitions";
 import styles from "@/app/ui/common/button/styles.module.scss";
+import { type ButtonProps } from "@/app/ui/common/button/types";
+import { Button as NUIButton } from "@nextui-org/react";
 
 export default function Button({
   children,
@@ -8,12 +9,12 @@ export default function Button({
   customStyles = {},
 }: ButtonProps) {
   return (
-    <button
-      onClick={handleClick}
+    <NUIButton
+      onPress={handleClick}
       className={`${styles.button} ${styles[variant]}`}
       style={customStyles}
     >
       {children}
-    </button>
+    </NUIButton>
   );
 }

@@ -1,5 +1,5 @@
-import { type TypographyProps } from "@/app/ui/common/typography/definitions";
 import styles from "@/app/ui/common/typography/styles.module.scss";
+import { type TypographyProps } from "@/app/ui/common/typography/types";
 
 const TypographyElementMap = {
   title: "h1",

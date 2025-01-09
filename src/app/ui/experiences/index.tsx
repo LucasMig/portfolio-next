@@ -7,7 +7,10 @@ const sampleJob = workExperiences[0];
 export default function Experiences() {
   return (
     <div className={styles.container}>
-      <JobAccordion job={sampleJob} />
+      {workExperiences.map((job, index) => (
+        <JobAccordion key={index} job={job} />
+      ))}
+      {/* <JobAccordion job={sampleJob} /> */}
     </div>
   );
 }

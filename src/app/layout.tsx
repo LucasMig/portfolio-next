@@ -1,8 +1,9 @@
 import "@/app/globals.scss";
-import Header from "@/app/ui/header";
-import Footer from "@/app/ui/footer";
-import { interTight } from "@/app/ui/fonts";
 import { MainContextProvider } from "@/app/main-context-provider";
+import { interTight } from "@/app/ui/fonts";
+import Footer from "@/app/ui/footer";
+import Header from "@/app/ui/header";
+import { NextUIProvider } from "@nextui-org/react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -19,11 +20,13 @@ export default function RootLayout({
   return (
     <html id="html" lang="en">
       <body className={interTight.className}>
-        <MainContextProvider>
-          <Header />
-          {children}
-          <Footer />
-        </MainContextProvider>
+        <NextUIProvider>
+          <MainContextProvider>
+            <Header />
+            {children}
+            <Footer />
+          </MainContextProvider>
+        </NextUIProvider>
       </body>
     </html>
   );
