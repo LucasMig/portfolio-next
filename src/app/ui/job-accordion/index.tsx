@@ -1,14 +1,22 @@
-import { formatDate } from '@/app/lib/utils';
-import { Tag, Typography } from '@/app/ui/common';
-import styles from '@/app/ui/job-accordion/styles.module.scss';
-import { type JobAccordionProps } from '@/app/ui/job-accordion/types';
-import parse from 'html-react-parser';
+import { formatDate } from "@/app/lib/utils";
+import { Tag, Typography } from "@/app/ui/common";
+import styles from "@/app/ui/job-accordion/styles.module.scss";
+import { type JobAccordionProps } from "@/app/ui/job-accordion/types";
+import parse from "html-react-parser";
 
 export default function JobAccordion({
   job,
   isOpen = false,
 }: JobAccordionProps) {
-  const { company, title, location, startDate, endDate, tags, showcase } = job;
+  const {
+    company,
+    title: _title,
+    location,
+    startDate,
+    endDate,
+    tags,
+    showcase,
+  } = job;
 
   return (
     <div className={styles.container}>
@@ -22,7 +30,7 @@ export default function JobAccordion({
             </Typography>
             <div className={styles.subHeading}>
               <Typography variant="text">{`${formatDate(startDate)} — ${
-                endDate ? formatDate(endDate) : 'Present'
+                endDate ? formatDate(endDate) : "Present"
               }`}</Typography>
             </div>
           </div>
@@ -34,7 +42,7 @@ export default function JobAccordion({
         </div>
       </div>
       <div
-        className={`${styles.body} ${styles[`${isOpen ? 'open' : 'closed'}`]}`}
+        className={`${styles.body} ${styles[`${isOpen ? "open" : "closed"}`]}`}
       >
         <div className={styles.showcase}>
           <p>{parse(showcase.description)}</p>

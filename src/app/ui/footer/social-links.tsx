@@ -1,8 +1,7 @@
-import { BsTwitterX, BsLinkedin, BsInstagram, BsYoutube } from "react-icons/bs";
-import Link from "next/link";
-import styles from "@/app/ui/footer/styles.module.scss";
-import { Typography } from "@/app/ui/common";
 import { socialMediaInfo } from "@/app/_data/socialMediaInfo";
+import styles from "@/app/ui/footer/styles.module.scss";
+import Link from "next/link";
+import { BsInstagram, BsLinkedin, BsTwitterX, BsYoutube } from "react-icons/bs";
 
 const socialIconMap = {
   twitter: BsTwitterX,

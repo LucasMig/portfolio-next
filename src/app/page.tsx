@@ -1,13 +1,19 @@
-'use client';
+"use client";
 
-import styles from '@/app/page.module.scss';
-import ExperiencesSection from '@/app/ui/experiences-section';
-import Hero from '@/app/ui/hero';
-import Maintenance from '@/app/ui/maintenance';
-import OfferingsSection from '@/app/ui/offerings-section';
+import styles from "@/app/page.module.scss";
+import ExperiencesSection from "@/app/ui/experiences-section";
+import Hero from "@/app/ui/hero";
+import Maintenance from "@/app/ui/maintenance";
+import OfferingsSection from "@/app/ui/offerings-section";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const isMobile = window.innerWidth < 400;
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const newValue = window.innerWidth < 400;
+    setIsMobile(newValue);
+  }, []);
 
   return (
     <main className={styles.main}>
