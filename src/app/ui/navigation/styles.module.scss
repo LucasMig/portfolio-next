@@ -22,26 +22,23 @@
     &.open {
       transform: translateX(0);
     }
-  }
 
-  .menuList a {
-    text-decoration: none;
-    color: #000; /* Change color based on your theme */
-  }
-
-  .menuList .menuItem {
-    padding: 1.2rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-    letter-spacing: 0.05rem;
-    border-radius: 1.6rem;
-
-    &.active {
-      font-weight: 700;
-      background-color: $main-color;
-
-      a {
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+    
+    .menuItem {
+      padding: 1.2rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: 0.05rem;
+      border-radius: 1.6rem;
+      
+      &.active {
+        font-weight: 700;
+        background-color: $main-color;
         color: #fff;
-      }
     }
   }
+}

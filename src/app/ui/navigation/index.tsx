@@ -3,23 +3,25 @@
 import { navLinks } from "@/app/lib/constants";
 import { useMainContext } from "@/app/main-context-provider";
 import { Button } from "@/app/ui/common";
+import styles from "@/app/ui/navigation/styles.module.scss";
 import {
   type NavLinkProps,
   type SideMenuProps,
-} from "@/app/ui/navigation/definitions";
-import styles from "@/app/ui/navigation/styles.module.scss";
+} from "@/app/ui/navigation/types";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 function NavLink({ href, label, isActive, handleClick }: NavLinkProps) {
   return (
-    <li
-      className={`${styles.menuItem} ${isActive ? styles.active : ""}`}
-      onClick={handleClick}
-    >
-      <Link href={href}>{label}</Link>
-    </li>
+    <Link href={href}>
+      <li
+        className={`${styles.menuItem} ${isActive ? styles.active : ""}`}
+        onClick={handleClick}
+      >
+        {label}
+      </li>
+    </Link>
   );
 }
 
