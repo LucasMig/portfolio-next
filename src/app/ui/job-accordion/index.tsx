@@ -8,15 +8,7 @@ export default function JobAccordion({
   job,
   isOpen = false,
 }: JobAccordionProps) {
-  const {
-    company,
-    title: _title,
-    location,
-    startDate,
-    endDate,
-    tags,
-    showcase,
-  } = job;
+  const { company, title, location, startDate, endDate, tags, showcase } = job;
 
   return (
     <div className={styles.container}>
