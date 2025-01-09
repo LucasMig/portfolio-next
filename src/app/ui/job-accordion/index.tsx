@@ -1,7 +1,8 @@
-import { JobAccordionProps } from "@/app/ui/job-accordion/definitions";
-import styles from "@/app/ui/job-accordion/styles.module.scss";
-import { Typography, Tag } from "@/app/ui/common";
-import { formatDate } from "@/app/lib/utils";
+import { formatDate } from '@/app/lib/utils';
+import { Tag, Typography } from '@/app/ui/common';
+import styles from '@/app/ui/job-accordion/styles.module.scss';
+import { type JobAccordionProps } from '@/app/ui/job-accordion/types';
+import parse from 'html-react-parser';
 
 export default function JobAccordion({
   job,
@@ -12,17 +13,18 @@ export default function JobAccordion({
   return (
     <div className={styles.container}>
       <div className={styles.headingContainer}>
+        {/* <FaChevronRight /> */}
         <div className={styles.header}>
           <div className={styles.heading}>
-            <Typography variant="jobTitle">{company},</Typography>
+            <Typography variant="jobTitle">{title},</Typography>
             <Typography variant="jobTitle" invertTextColor>
-              {location}
+              {company}
             </Typography>
-          </div>
-          <div className={styles.subHeading}>
-            <Typography variant="text">{`• ${formatDate(startDate)} - ${
-              endDate ? formatDate(endDate) : "Present"
-            }`}</Typography>
+            <div className={styles.subHeading}>
+              <Typography variant="text">{`${formatDate(startDate)} — ${
+                endDate ? formatDate(endDate) : 'Present'
+              }`}</Typography>
+            </div>
           </div>
         </div>
         <div className={styles.tags}>
@@ -31,19 +33,18 @@ export default function JobAccordion({
           ))}
         </div>
       </div>
-
-      {isOpen && (
-        <div className={styles.body}>
-          <div className={styles.showcase}>
-            <p>{showcase.description}</p>
-            <div className={styles.images}>
-              {showcase.images.map((image, index) => (
-                <img key={index} src={image} alt="Showcase" />
-              ))}
-            </div>
+      <div
+        className={`${styles.body} ${styles[`${isOpen ? 'open' : 'closed'}`]}`}
+      >
+        <div className={styles.showcase}>
+          <p>{parse(showcase.description)}</p>
+          <div className={styles.images}>
+            {showcase.images.map((image, index) => (
+              <img key={index} src={image} alt="Showcase" />
+            ))}
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }

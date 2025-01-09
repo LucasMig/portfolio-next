@@ -1,4 +1,7 @@
 @import '@/app/ui/variables';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   @include reset;

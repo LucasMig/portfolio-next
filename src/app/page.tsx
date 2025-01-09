@@ -18,7 +18,7 @@ export default function Home() {
           <ExperiencesSection />
         </>
       ) : (
-        <Maintenance customMessage="If you are seeing this message, it means that the desktop version of the website is not ready yet. Please use a mobile device to view the website."/>
+        <Maintenance customMessage="If you are seeing this message, it means that the desktop version of the website is not ready yet. Please use a mobile device to view the website." />
       )}
     </main>
   );

@@ -1,9 +1,21 @@
 @import '@/app/ui/variables';
 
 .tag {
-  padding: 0.5rem 1rem;
-  border-radius: 4rem;
-  border: solid 1px $gray-700;
   background-color: $gray-100;
+  
+
+  &.color {
+    &-set-a {
+      background-color: $main-tint-100;
+    }
+
+    &-set-b {
+      background-color: $main-tint-200;
+    }
+
+    &-set-c {
+      background-color: $main-tint-300;
+    }
+  }
 }
 
