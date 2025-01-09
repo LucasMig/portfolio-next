@@ -5,6 +5,7 @@ import Footer from "@/app/ui/footer";
 import Header from "@/app/ui/header";
 import { NextUIProvider } from "@nextui-org/react";
 import type { Metadata } from "next";
+import styles from "./page.module.scss";
 
 export const metadata: Metadata = {
   title: "Lucas Migliori - Full Stack Developer",
@@ -23,6 +24,7 @@ export default function RootLayout({
         <NextUIProvider>
           <MainContextProvider>
             <Header />
+            <div className={styles.spacer} />
             {children}
             <Footer />
           </MainContextProvider>
